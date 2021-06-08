@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+.card {
+  background-color: #1b1938;
+  border-radius: 32px 32px 0px 0px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  width: 375px;
+  .left {
+    padding: 300px 20px 10px 20px;
+    position: relative;
+    h1 {
+      color: white;
+      font-family: "Inter", sans-serif;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    p {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 15px;
+      margin-bottom: 30px;
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+  }
+
+  .colums {
+    padding: 20px;
+    section {
+      margin: 20px;
+
+      h3 {
+        color: white;
+        font-family: "Inter", sans-serif;
+      }
+
+      h4 {
+        font-family: "Lexend Deca", sans-serif;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .right {
+    border-radius: 32px 32px 0px 0px;
+    top: 0;
+    position: absolute;
+
+    img {
+      border-radius: 32px 32px 0px 0px;
+      width: 375px;
+      position: absolute;
+      top: 0;
+      z-index: 999;
+    }
+
+    .img2 {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    width: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-radius: 20px;
+    margin: 150px;
+    position: unset;
+
+    .left {
+      padding: 80px 0px 50px 130px;
+      justify-content: center;
+      margin: 0;
+
+      h1 {
+        text-align: left;
+        font-size: 32px;
+        padding-bottom: 20px;
+        margin: 0;
+      }
+
+      p {
+        text-align: left;
+        line-height: 25px;
+      }
+
+      .colums {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        text-align: left;
+        padding: 0px;
+
+        section {
+          margin: 0px;
+          padding-top: 50px;
+        }
+      }
+    }
+
+    .right {
+      position: unset;
+      border-radius: 0px;
+      padding: 0;
+      margin: 0;
+
+      img {
+        position: unset;
+        display: none;
+      }
+
+      .img2 {
+        display: block;
+        right: 0;
+        border-radius: 0px 20px 20px 0px;
+        float: right;
+        width: 80%;
+      }
+    }
+  }
+}
